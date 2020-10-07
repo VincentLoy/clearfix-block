@@ -1,3 +1,9 @@
+# Clearfix Block
+A dead simple clearfix block for Wordpress Gutenberg.
+This plugin simply add a `<span class="clearfix"></span>"` HTML tag.
+
+### Bootstrapped with Create Guten Block
+
 This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
 
 Below you will find some information on how to run scripts.

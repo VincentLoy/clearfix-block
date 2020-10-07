@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: clearfix-block — CGB Gutenberg Block Plugin
- * Plugin URI: https://github.com/ahmadawais/create-guten-block/
- * Description: clearfix-block — is a Gutenberg plugin created via create-guten-block.
+ * Plugin Name: Clearfix Block
+ * Plugin URI: https://github.com/VincentLoy/clearfix-block/
+ * Description: Clearfix Block — A dead simple clearfix block for Gutenberg.
  * Author: Vincent Loy
  * Author URI: https://vincent-loy.fr/
  * Version: 1.0.0

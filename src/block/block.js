@@ -25,16 +25,18 @@ const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.b
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'cgb/block-clearfix-block', {
+registerBlockType( 'clearfix-block/block-clearfix-block', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'clearfix-block - CGB Block' ), // Block title.
-	icon: 'shield', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
-	keywords: [
-		__( 'clearfix-block — CGB Block' ),
-		__( 'CGB Example' ),
-		__( 'create-guten-block' ),
-	],
+    title: __('Clearfix Block'), // Block title.
+    icon: 'editor-break', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+    category: 'layout', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+    keywords: [
+        __('Clearfix Block'),
+        __('Clearfix'),
+        __('create-guten-block'),
+        __('jump'),
+        __('fix'),
+    ],
 
 	/**
 	 * The edit function describes the structure of your block in the context of the editor.
@@ -51,18 +53,9 @@ registerBlockType( 'cgb/block-clearfix-block', {
 		// Creates a <p class='wp-block-cgb-block-clearfix-block'></p>.
 		return (
 			<div className={ props.className }>
-				<p>— Hello from the backend.</p>
-				<p>
-					CGB BLOCK: <code>clearfix-block</code> is a new Gutenberg block
-				</p>
-				<p>
-					It was created via{ ' ' }
-					<code>
-						<a href="https://github.com/ahmadawais/create-guten-block">
-							create-guten-block
-						</a>
-					</code>.
-				</p>
+				<div class="wp-block-nextpage">
+					<span>Clearfix</span>
+				</div>
 			</div>
 		);
 	},
@@ -80,20 +73,7 @@ registerBlockType( 'cgb/block-clearfix-block', {
 	 */
 	save: ( props ) => {
 		return (
-			<div className={ props.className }>
-				<p>— Hello from the frontend.</p>
-				<p>
-					CGB BLOCK: <code>clearfix-block</code> is a new Gutenberg block.
-				</p>
-				<p>
-					It was created via{ ' ' }
-					<code>
-						<a href="https://github.com/ahmadawais/create-guten-block">
-							create-guten-block
-						</a>
-					</code>.
-				</p>
-			</div>
+			<span className={ props.className }></span>
 		);
 	},
 } );

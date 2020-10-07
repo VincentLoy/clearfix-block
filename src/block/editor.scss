@@ -5,11 +5,9 @@
  * which makes it higher in priority.
  */
 
-.wp-block-cgb-block-clearfix-block  {
-  background: $green;
-  border: 0.2rem solid $black;
-  color: $black;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem;
+[data-type="clearfix-block/block-clearfix-block"] {
+  clear: both;
+}
+
+.wp-block-clearfix-block-block-clearfix-block  {
 }
